@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tip Calculator App
+This React application provides a simple and user-friendly interface for calculating tips based on the bill amount and user satisfaction levels. Users can input the bill amount, select their satisfaction level, and optionally provide a satisfaction level for a friend. The app then calculates the tip amount and displays the total bill, including the tip.
 
-## Available Scripts
+## Features
+Bill Input: Users can input the total bill amount.
 
-In the project directory, you can run:
+Satisfaction Levels: Users can select their satisfaction level and, optionally, their friend's satisfaction level from a dropdown menu.
 
-### `npm start`
+Tip Calculation: The app calculates the tip based on the average of the selected satisfaction levels.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Output Display: Displays the total amount to be paid, including the original bill and the calculated tip.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Reset Functionality: Allows users to reset the inputs and start over.
 
-### `npm test`
+### Components
+App Component
+The main component rendering the TipCalculator.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+TipCalculator Component
+Manages the state for bill amount and satisfaction percentages, calculates the tip, and renders various sub-components.
 
-### `npm run build`
+BillInput Component
+Handles the input for the bill amount.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+SelectPercentage Component
+A reusable component for selecting satisfaction levels.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Output Component
+Displays the calculated total amount to be paid.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Reset Component
+Provides a button to reset all input fields.
 
-### `npm run eject`
+### Instructions for Running the App
+Clone the repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+git clone <repository-url>
+Navigate to the project directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+cd <project-directory>
+Install dependencies.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+npm install
+Start the development server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copy code
+npm start
+Open the app in your web browser at http://localhost:3000.
 
-## Learn More
+### Usage
+Enter the bill amount in the designated input field.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Select your satisfaction level from the first dropdown.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Optionally, select your friend's satisfaction level from the second dropdown.
 
-### Code Splitting
+The app will automatically calculate the tip and display the total amount to be paid.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start over, click the "Reset" button.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Technologies Used
+React
+useState Hook
+JSX
+CSS
